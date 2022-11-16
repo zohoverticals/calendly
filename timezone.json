@@ -1,0 +1,512 @@
+[
+    {
+        "label": "(GMT -12:0) GMT-12:00 (Etc/GMT+12)",
+        "offset": "-12",
+        "timeZone": "Etc/GMT+12"
+    },
+    {
+        "label": "(GMT -11:0) GMT-11:00 (Etc/GMT+11)",
+        "offset": "-11",
+        "timeZone": "Etc/GMT+11"
+    },
+    {
+        "label": "(GMT -11:0) Samoa Standard Time (Pacific/Midway)",
+        "offset": "-11",
+        "timeZone": "Pacific/Midway"
+    },
+    {
+        "label": "(GMT -11:0) Niue Time (Pacific/Niue)",
+        "offset": "-11",
+        "timeZone": "Pacific/Niue"
+    },
+    {
+        "label": "(GMT -11:0) Samoa Standard Time (Pacific/Pago_Pago)",
+        "offset": "-11",
+        "timeZone": "Pacific/Pago_Pago"
+    },
+    {
+        "label": "(GMT -11:0) Samoa Standard Time (Pacific/Samoa)",
+        "offset": "-11",
+        "timeZone": "Pacific/Samoa"
+    },
+    {
+        "label": "(GMT -11:0) Samoa Standard Time (US/Samoa)",
+        "offset": "-11",
+        "timeZone": "US/Samoa"
+    },
+    {
+        "label": "(GMT -9:0) Hawaii Daylight Time (America/Adak)",
+        "offset": "-9",
+        "timeZone": "America/Adak"
+    },
+    {
+        "label": "(GMT -9:0) Hawaii Daylight Time (America/Atka)",
+        "offset": "-9",
+        "timeZone": "America/Atka"
+    },
+    {
+        "label": "(GMT -10:0) GMT-10:00 (Etc/GMT+10)",
+        "offset": "-10",
+        "timeZone": "Etc/GMT+10"
+    },
+    {
+        "label": "(GMT -10:0) Hawaii Standard Time (HST)",
+        "offset": "-10",
+        "timeZone": "HST"
+    },
+    {
+        "label": "(GMT -10:0) Hawaii Standard Time (Pacific/Honolulu)",
+        "offset": "-10",
+        "timeZone": "Pacific/Honolulu"
+    },
+    {
+        "label": "(GMT -10:0) Hawaii Standard Time (Pacific/Johnston)",
+        "offset": "-10",
+        "timeZone": "Pacific/Johnston"
+    },
+    {
+        "label": "(GMT -10:0) Cook Is. Time (Pacific/Rarotonga)",
+        "offset": "-10",
+        "timeZone": "Pacific/Rarotonga"
+    },
+    {
+        "label": "(GMT -10:0) Tahiti Time (Pacific/Tahiti)",
+        "offset": "-10",
+        "timeZone": "Pacific/Tahiti"
+    },
+    {
+        "label": "(GMT -10:0) Hawaii Standard Time (SystemV/HST10)",
+        "offset": "-10",
+        "timeZone": "SystemV/HST10"
+    },
+    {
+        "label": "(GMT -9:0) Hawaii Daylight Time (US/Aleutian)",
+        "offset": "-9",
+        "timeZone": "US/Aleutian"
+    },
+    {
+        "label": "(GMT -10:0) Hawaii Standard Time (US/Hawaii)",
+        "offset": "-10",
+        "timeZone": "US/Hawaii"
+    },
+    {
+        "label": "(GMT -9:30) Marquesas Time (Pacific/Marquesas)",
+        "offset": "-9:30",
+        "timeZone": "Pacific/Marquesas"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (AST)",
+        "offset": "-8",
+        "timeZone": "AST"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Anchorage)",
+        "offset": "-8",
+        "timeZone": "America/Anchorage"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Juneau)",
+        "offset": "-8",
+        "timeZone": "America/Juneau"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Metlakatla)",
+        "offset": "-8",
+        "timeZone": "America/Metlakatla"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Nome)",
+        "offset": "-8",
+        "timeZone": "America/Nome"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Sitka)",
+        "offset": "-8",
+        "timeZone": "America/Sitka"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (America/Yakutat)",
+        "offset": "-8",
+        "timeZone": "America/Yakutat"
+    },
+    {
+        "label": "(GMT -9:0) GMT-09:00 (Etc/GMT+9)",
+        "offset": "-9",
+        "timeZone": "Etc/GMT+9"
+    },
+    {
+        "label": "(GMT -9:0) Gambier Time (Pacific/Gambier)",
+        "offset": "-9",
+        "timeZone": "Pacific/Gambier"
+    },
+    {
+        "label": "(GMT -9:0) Alaska Standard Time (SystemV/YST9)",
+        "offset": "-9",
+        "timeZone": "SystemV/YST9"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (SystemV/YST9YDT)",
+        "offset": "-8",
+        "timeZone": "SystemV/YST9YDT"
+    },
+    {
+        "label": "(GMT -8:0) Alaska Daylight Time (US/Alaska)",
+        "offset": "-8",
+        "timeZone": "US/Alaska"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (America/Ensenada)",
+        "offset": "-7",
+        "timeZone": "America/Ensenada"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (America/Los_Angeles)",
+        "offset": "-7",
+        "timeZone": "America/Los_Angeles"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (America/Santa_Isabel)",
+        "offset": "-7",
+        "timeZone": "America/Santa_Isabel"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (America/Tijuana)",
+        "offset": "-7",
+        "timeZone": "America/Tijuana"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (America/Vancouver)",
+        "offset": "-7",
+        "timeZone": "America/Vancouver"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (Canada/Pacific)",
+        "offset": "-7",
+        "timeZone": "Canada/Pacific"
+    },
+    {
+        "label": "(GMT -8:0) GMT-08:00 (Etc/GMT+8)",
+        "offset": "-8",
+        "timeZone": "Etc/GMT+8"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (Mexico/BajaNorte)",
+        "offset": "-7",
+        "timeZone": "Mexico/BajaNorte"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (PST)",
+        "offset": "-7",
+        "timeZone": "PST"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (PST8PDT)",
+        "offset": "-7",
+        "timeZone": "PST8PDT"
+    },
+    {
+        "label": "(GMT -8:0) Pitcairn Standard Time (Pacific/Pitcairn)",
+        "offset": "-8",
+        "timeZone": "Pacific/Pitcairn"
+    },
+    {
+        "label": "(GMT -8:0) Pacific Standard Time (SystemV/PST8)",
+        "offset": "-8",
+        "timeZone": "SystemV/PST8"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (SystemV/PST8PDT)",
+        "offset": "-7",
+        "timeZone": "SystemV/PST8PDT"
+    },
+    {
+        "label": "(GMT -7:0) Pacific Daylight Time (US/Pacific)",
+        "offset": "-7",
+        "timeZone": "US/Pacific"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Boise)",
+        "offset": "-6",
+        "timeZone": "America/Boise"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Cambridge_Bay)",
+        "offset": "-6",
+        "timeZone": "America/Cambridge_Bay"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Chihuahua)",
+        "offset": "-6",
+        "timeZone": "America/Chihuahua"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Denver)",
+        "offset": "-6",
+        "timeZone": "America/Denver"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Edmonton)",
+        "offset": "-6",
+        "timeZone": "America/Edmonton"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Inuvik)",
+        "offset": "-6",
+        "timeZone": "America/Inuvik"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Mazatlan)",
+        "offset": "-6",
+        "timeZone": "America/Mazatlan"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Ojinaga)",
+        "offset": "-6",
+        "timeZone": "America/Ojinaga"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Shiprock)",
+        "offset": "-6",
+        "timeZone": "America/Shiprock"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (America/Yellowknife)",
+        "offset": "-6",
+        "timeZone": "America/Yellowknife"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (Canada/Mountain)",
+        "offset": "-6",
+        "timeZone": "Canada/Mountain"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (MST7MDT)",
+        "offset": "-6",
+        "timeZone": "MST7MDT"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (Mexico/BajaSur)",
+        "offset": "-6",
+        "timeZone": "Mexico/BajaSur"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (Navajo)",
+        "offset": "-6",
+        "timeZone": "Navajo"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (SystemV/MST7MDT)",
+        "offset": "-6",
+        "timeZone": "SystemV/MST7MDT"
+    },
+    {
+        "label": "(GMT -6:0) Mountain Daylight Time (US/Mountain)",
+        "offset": "-6",
+        "timeZone": "US/Mountain"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Creston)",
+        "offset": "-7",
+        "timeZone": "America/Creston"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Dawson)",
+        "offset": "-7",
+        "timeZone": "America/Dawson"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Dawson_Creek)",
+        "offset": "-7",
+        "timeZone": "America/Dawson_Creek"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Fort_Nelson)",
+        "offset": "-7",
+        "timeZone": "America/Fort_Nelson"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Hermosillo)",
+        "offset": "-7",
+        "timeZone": "America/Hermosillo"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Phoenix)",
+        "offset": "-7",
+        "timeZone": "America/Phoenix"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (America/Whitehorse)",
+        "offset": "-7",
+        "timeZone": "America/Whitehorse"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (Canada/Yukon)",
+        "offset": "-7",
+        "timeZone": "Canada/Yukon"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (MST)",
+        "offset": "-7",
+        "timeZone": "MST"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (PNT)",
+        "offset": "-7",
+        "timeZone": "PNT"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (SystemV/MST7)",
+        "offset": "-7",
+        "timeZone": "SystemV/MST7"
+    },
+    {
+        "label": "(GMT -7:0) Mountain Standard Time (US/Arizona)",
+        "offset": "-7",
+        "timeZone": "US/Arizona"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Detroit)",
+        "offset": "-4",
+        "timeZone": "America/Detroit"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Fort_Wayne)",
+        "offset": "-4",
+        "timeZone": "America/Fort_Wayne"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Grand_Turk)",
+        "offset": "-4",
+        "timeZone": "America/Grand_Turk"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Indianapolis)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Indianapolis"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Marengo)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Marengo"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Petersburg)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Petersburg"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Vevay)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Vevay"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Vincennes)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Vincennes"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indiana/Winamac)",
+        "offset": "-4",
+        "timeZone": "America/Indiana/Winamac"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Indianapolis)",
+        "offset": "-4",
+        "timeZone": "America/Indianapolis"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Iqaluit)",
+        "offset": "-4",
+        "timeZone": "America/Iqaluit"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Kentucky/Louisville)",
+        "offset": "-4",
+        "timeZone": "America/Kentucky/Louisville"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Kentucky/Monticello)",
+        "offset": "-4",
+        "timeZone": "America/Kentucky/Monticello"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Louisville)",
+        "offset": "-4",
+        "timeZone": "America/Louisville"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Montreal)",
+        "offset": "-4",
+        "timeZone": "America/Montreal"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Nassau)",
+        "offset": "-4",
+        "timeZone": "America/Nassau"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/New_York)",
+        "offset": "-4",
+        "timeZone": "America/New_York"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Nipigon)",
+        "offset": "-4",
+        "timeZone": "America/Nipigon"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Pangnirtung)",
+        "offset": "-4",
+        "timeZone": "America/Pangnirtung"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Port-au-Prince)",
+        "offset": "-4",
+        "timeZone": "America/Port-au-Prince"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Thunder_Bay)",
+        "offset": "-4",
+        "timeZone": "America/Thunder_Bay"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (America/Toronto)",
+        "offset": "-4",
+        "timeZone": "America/Toronto"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (Canada/Eastern)",
+        "offset": "-4",
+        "timeZone": "Canada/Eastern"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (EST5EDT)",
+        "offset": "-4",
+        "timeZone": "EST5EDT"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (IET)",
+        "offset": "-4",
+        "timeZone": "IET"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (SystemV/EST5EDT)",
+        "offset": "-4",
+        "timeZone": "SystemV/EST5EDT"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (US/East-Indiana)",
+        "offset": "-4",
+        "timeZone": "US/East-Indiana"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (US/Eastern)",
+        "offset": "-4",
+        "timeZone": "US/Eastern"
+    },
+    {
+        "label": "(GMT -4:0) Eastern Daylight Time (US/Michigan)",
+        "offset": "-4",
+        "timeZone": "US/Michigan"
+    }
+]

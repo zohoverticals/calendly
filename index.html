@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Getting Started</title>
+    <script src="main.js"></script>
+
+    <script type="text/javascript" src="https://live.zwidgets.com/js-sdk/1.0.6/ZohoEmbededAppSDK.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            document.getElementById('loadingGif').style.display = "none";
+            ZOHO.embeddedApp.init().then(function () {
+                console.log("init");
+                
+                 ZOHO.CRM.UI.Resize({ height: "700", width: "850" }).then(function (data) {
+                console.log("gow");
+
+                var connectorName = "calendly2";
+               
+                document.getElementById("home").style.display = "none";
+                document.getElementById("loadingGif").style.display = "inline-flex";
+
+                setTimeout(() => {
+
+                    ZOHO.CRM.CONNECTOR.isConnectorAuthorized(connectorName).then(async function (result) {
+                        console.log("gowq");
+                        console.log(result);
+                        document.getElementById("home").style.display = "block";
+                        document.getElementById("loadingGif").style.display = "none";
+                        if (result == "true") {
+                            document.getElementById('connectorName').innerHTML = 'Authorized';
+                            document.getElementById('connectorName').disabled = true;
+                            getUserMe();
+                        } else if (result == "false") {
+                            document.getElementById('connectorName').innerHTML = 'Authorize';
+                            document.getElementById('connectorName').disabled = false;
+                            document.getElementById('configure').disabled = true;
+                        }
+                    });
+                }, 3000);
+               });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="Container-fluid">
+        <div class="centerLoading" role="status" id="loadingGif" style="width: 100%;height: 600px">
+            <img src="Image/loadinggif.gif" style="width: 200px;height: 120px;" alt="loading">
+        </div>
+        <div id="home">
+            <div class="row marginTop">
+                <div class="col-md-2 col-2"></div>
+                <div class="col-md-8 col-8">
+                    
+                    <div class="centerLoading">
+                        <img src="Image/1663671940917.png" alt="logo" style="width: 150px;height:70px;">
+                    </div>
+                    <h3 class="centerTag textStyle">Welcome to Finstack CRM </h3>
+                    <p class="centerTag " style="margin-top: 5px;">Configure the below integrations to get started</p>
+                </div>
+                <div class="col-md-2 col-2">
+                    <img style="left:15%;position:relative; cursor: pointer;" src="./Image/close.svg" alt="close"
+                        onclick="closing()">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="box">
+                        <div style="display: flex;">
+                            <div class="row" style="width: 100%;">
+                                <div class="col-md-1"><img src="./Image/calendly-removebg-preview.png"
+                                        class="zylkerLogo" alt="calendly image"></div>
+                                <div class="col-md-7">
+                                    <p class="pTag">Sync and Manage calendly schedules of your teams from Finstak CRM.
+                                    </p>
+                                </div>
+                                <div class="col-md-4"><button class="btn btn-primary btnsize styles" id="connectorName"
+                                        onclick="authorizeConnector()"></button>
+                                    <button class="btn btn-primary btnsize styles" onclick="configure()"
+                                        id="configure">Configure</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 130px;">
+                <div class="col-12">
+                    
+                    <div class="box" style="border-left: 5px solid #018EE0;">
+                        <h6 style="font-weight: 600;padding:10px;">Support</h6>
+                        <p style="text-align: center;font-size: 13px;">If you have questions
+                            about how to use any part of the software, or feedback on other features you'd
+                            like to see, you can email us at <a class="clar" href="#" id="SupportMail"> </a>
+                            We
+                            hope you enjoy using CRM Application and look forward to
+                            helping you manage your CRM as easily as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <a style="cursor: pointer;float: right;" href="" onclick="dontShow();">Don't show this again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

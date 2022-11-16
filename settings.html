@@ -1,0 +1,432 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Getting Started</title>
+    <script src="settings.js"></script>
+
+    <script type="text/javascript" src="https://live.zwidgets.com/js-sdk/1.0.6/ZohoEmbededAppSDK.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            document.getElementById('tabview').style.display = "none";
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("actives");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+
+            var coll = document.getElementsByClassName("collapsibles");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("actives");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+
+            
+            ZOHO.embeddedApp.init().then(function () {
+                console.log("Setting init");
+               onSettingsLoad();
+            });
+        });
+    </script>
+</head>
+
+<body >
+    <div class="Container-fluid">
+        <div id="tabview">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" onclick="settings()"
+                                href="#Settings">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" id="calendlyTab" href="#Calendly"
+                                onclick="calen()">Calendly</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div id="calendlyHome">
+            <div class="tab-content">
+                <div class="centerLoading" role="status" id="loadingGif1" style="width: 100%;height: 600px;position: absolute;">
+                    <img src="Image/loadinggif.gif" style="width: 200px;height: 120px;" alt="loading">
+                </div>
+                <div id="Settings" class="container tab-pane active" style="margin-top: 30px;">
+                    <div id="Authorized">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="collapsible">USER MAPPING</button>
+                                <div class="content" style="min-height: 180px;overflow-y: scroll;">
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10" style="top: 15px;">
+                                            <div>
+                                             <p>Map calendly and CRM users to persists the calendly event ownership mapping with CRM meetings host.</p>
+                                                <table id="customers">
+                                                    <tr>
+                                                        <th>CRM USER'S</th>
+                                                        <th>CALENDLY USER'S</th>
+                                                    </tr>
+                                                    <tbody id="gowtham"></tbody>
+                                                </table>
+                                            </div>
+    
+                                            <div class="centerBtn">
+                                                <button class="btnStyle" onclick="mapUser()">Map User</button>
+                                                <button class="btnStyle" style="margin-left: 10px;"
+                                                    onclick="clearing()">Clear</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row" style="top: 10px;position: relative;">
+                            <div class="col-md-12">
+                                <button type="button" class="collapsible">LEAD'S / CONTACT</button>
+                                <div class="content" style="min-height: 180px;overflow-y: scroll;">
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10" style="top: 15px;">
+                                            <div>
+                                                <span style="display: inline-flex;"><h6 style="font-weight: 700;width: 180px;margin-top: 15px;font-size: 1.3vw;">INVITEE TYPE :</h6> <p>Choose the module where calendly event invitee/guests should be Created and Associated while syncing events.</p></span>
+                                                <select id="userModuleType"
+                                                    style="height: 40px;width: 275px;border-color: cornflowerblue;">
+                                                </select>
+                                            </div>
+    
+                                            <div class="centerBtn">
+                                                <button class="btnStyle" onclick="saveUserType()">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row" style="top: 20px;position: relative;">
+                            <div class="col-md-12">
+                                <button type="button" class="collapsible">NOTIFICATIONS</button>
+                                <div class="content" style="min-height: 180px;overflow-y: scroll;">
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-10" style="top: 15px;">
+                                            <div>
+                                                <span style="display: inline-flex;"><h6 style="font-weight: 700;width: 180px;margin-top: 15px;font-size: 1.3vw;">RAISE SIGNAL : </h6><p>CRM User will be notified with a bell notification at the web UI for events created, rescheduled and cancelled.</p></span> 
+                                                <select id="signal"
+                                                    style="height: 40px;width: 275px;border-color: cornflowerblue;">
+                                                    <option value='0' disabled>Select Signal</option>
+                                                    <option value='true'> True </option>
+                                                    <option value='false'> False</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="centerBtn">
+                                                <button class="btnStyle" onclick="saveNotification()">Save</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row" style="margin-top: 175px;">
+                            <div class="col-12">
+                                <div class="box" style="border-left: 5px solid #018EE0;">
+                                    <h5 style="font-weight: 600;padding:10px;">Timezone</h5>
+                                    <p style="text-align: center;"><b>Note : </b> Make sure to
+                                        match the calendly timezone with your CRM Org and user timezone. Difference in
+                                        timezone between calendly and CRM will cause date and time conflicts while syncing
+                                        the schedules in CRM.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button data-toggle="modal" id="gowthamBtn" data-target="#my-modal"></button>
+                        <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content border-0">
+                                    <div class="modal-body p-0">
+                                        <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                                            <div class="card-header pb-0 bg-white border-0 ">
+                                                <div class="row">
+                                                    <div class="col ml-auto"><button type="button" class="close"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span> </button></div>
+                                                </div>
+                                                <p class="font-weight-bold mb-2"> Are you sure you want to revoke the
+                                                    calendly
+                                                    integrations ?</p>
+                                                <p class="text-muted ">Future calendly schedules/events will not sync with
+                                                    Finstak CRM. Click Deactivate to proceed.</p>
+                                            </div>
+                                            <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                                <div class="row justify-content-end no-gutters">
+                                                    <div class="col-auto"><button type="button"
+                                                            class="btn btn-light text-muted"
+                                                            data-dismiss="modal">Cancel</button></div>
+                                                    <div class="col-auto"><button type="button" class="btn btn-danger px-4"
+                                                            data-dismiss="modal" onclick="revoking()">Deactivate</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <!-- sucess notification popup starts -->
+                        <button data-toggle="modal" id="successNotification" data-target="#my-sucess"></button>
+                        <div id="my-sucess" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content border-0">
+                                    <div class="modal-body p-0">
+                                        <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                                            <div class="card-header pb-0 bg-white border-0 ">
+                                                <div class="row">
+                                                    <div class="col ml-auto"><button type="button" class="close"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span> </button></div>
+                                                </div>
+                                                <p class="font-weight-bold mb-2" id="successHeader"> </p>
+                                            </div>
+                                            <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                                <div class="row justify-content-end no-gutters">
+                                                    <div class="col-auto"><button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">OK</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div style="float: right;margin-top: 5%;">
+                            <a onclick="revokeWebhook();" style="color: cornflowerblue;cursor: pointer;">Revoke</a>
+                        </div>
+                    </div>
+
+                    <div id="notAuthorized">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="box">
+                                    <div style="display: flex;">
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col-md-1"><img src="./Image/calendly-removebg-preview.png"
+                                                    class="zylkerLogo" alt="calendly image"></div>
+                                            <div class="col-md-7">
+                                                <p class="p1Tag">Sync and Manage calendly schedules of your teams from Finstak CRM.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4"><button class="btn btn-primary btnsize styles" id="connectorName"
+                                                    onclick="authorizeConnector()"></button>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div id="Calendly" class="container tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#appointment">New Appointment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#history" onclick="eventHistory()">Event
+                                        History</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#link" onclick="eventLink()"> Event
+                                        Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="appointment" class="container tab-pane active">
+                            <div id="calendlyFrame"></div>
+                        </div>
+                        <div id="history" class="container tab-pane fade">
+                            <div id="hasValue">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span><input type="text" id="inviteeEmail"
+                                                placeholder="Invitee Email (Optional)" class="searchEmail"> <img
+                                                src="Image/search.png" alt="search" onclick="search();"
+                                                style="width: 25px;height: 25px;cursor: pointer;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top: 15px;">
+                                    <div class="col-md-12">
+                                        <button type="button" class="collapsible">UPCOMING MEETING</button>
+                                        <div class="content" style="min-height: 150px;overflow-y: scroll;">
+                                            <div id="vals" style="min-height: 150px;max-height: 450px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 15px;">
+                                    <div class="col-md-12">
+                                        <button type="button" class="collapsible">PAST MEETING</button>
+                                        <div class="content" style="min-height: 150px;overflow-y: scroll;">
+                                            <div id="pastvals" style="min-height: 150px;max-height: 450px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="hasNoValue">
+
+                            </div>
+                        </div>
+                        <div id="link" class="container tab-pane fade">
+                            <div id="usersInfo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button data-toggle="modal" id="historyPopup" data-target="#my-modals"></button>
+                    <div id="my-modals" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content border-0">
+                                <div class="modal-body p-0">
+                                    <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                                        <div class="card-header pb-0 bg-white border-0 ">
+                                            <div class="row">
+                                                <div class="col ml-auto"><button type="button" class="close"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span> </button></div>
+                                            </div>
+                                            <p class="font-weight-bold mb-2">EMAIL</p>
+                                            <p class="text-muted " id="emails"> </p>
+
+                                            <p class="font-weight-bold mb-2">NAME</p>
+                                            <p class="text-muted " id="names"></p>
+
+                                            <p class="font-weight-bold mb-2">TIME ZONE</p>
+                                            <p class="text-muted " id="timeZones"></p>
+                                        </div>
+                                        <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                            <div class="row justify-content-end no-gutters">
+                                                <div class="col-auto"><button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">OK</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button data-toggle="modal" id="emailPopup" data-target="#my-emailPopup"></button>
+                    <div id="my-emailPopup" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content border-0">
+                                <div class="modal-body p-0">
+                                    <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                                        <div class="card-header pb-0 bg-white border-0 ">
+                                            <div class="row">
+                                                <div class="col ml-auto"><button type="button" class="close"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span> </button></div>
+                                            </div>
+
+                                            <div class="container tab-pane">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12">
+                                                        <button type="button" class="collapsibles">UPCOMING
+                                                            MEETING</button>
+                                                        <div class="contents"
+                                                            style="min-height: 150px;overflow-y: scroll;">
+                                                            <div id="emailUpcoming"
+                                                                style="min-height: 150px;max-height: 450px;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12">
+                                                        <button type="button" class="collapsibles">PAST MEETING</button>
+                                                        <div class="contents"
+                                                            style="min-height: 150px;overflow-y: scroll;">
+                                                            <div id="emailpastmeeting"
+                                                                style="min-height: 150px;max-height: 450px;">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                            <div class="row justify-content-end no-gutters">
+                                                <div class="col-auto"><button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">Close</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

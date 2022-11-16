@@ -1,0 +1,13 @@
+{
+    "connectorNameSpace" : "calendly2",
+    "getUsers" : "calendly2.users",
+    "createWebhook" : "calendly2.createwebhook",
+    "getorganizationlist" : "calendly2.getorganizationlist",
+    "scheduledeventorgpagetoken" : "calendly2.scheduledeventorgpagetoken",
+    "scheduledevents_org" : "calendly2.scheduledevents_org",
+    "scheduledevents_user" : "calendly2.scheduledevents_user",
+    "eventmembership" : "calendly2.eventmembership",
+    "eventtypeuser" : "calendly2.eventtypeuser",
+    "getsingleuselink" : "calendly2.getsingleuselink",
+    "scheduledevents_invitee" : "calendly2.scheduledevents_invitee"
+}

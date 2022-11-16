@@ -1,0 +1,336 @@
+/* LET THE STYLING BEGIN */
+.centerTag {
+    text-align: center;
+}
+
+.textStyle{
+    color: #018EE0;
+    font-family: 'Raleway',sans-serif;
+    font-size: 35px;
+    /* font-weight: 600; */
+    line-height: 72px;
+   
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.marginTop{
+    margin-top: 20px;
+}
+
+.box{
+    width: 90%;
+    height: 120px;
+    background-color: #F7F9F9;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    margin-top: 20px;
+    left: 5%;
+    position: relative;
+}
+
+
+.btnsize{
+    width: 105px;
+    height: 40px;
+}
+
+.zylkerLogo{
+    width: 80px;
+    height: 60px;
+    padding: 10px;
+    top: 35px;
+    position: relative;
+}
+
+.pTag{
+    top: 40px;
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+.p1Tag{
+  top: 50px;
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 25px;
+}
+
+.styles{
+    top: 20px;
+    position: relative;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    /* background-color: #208aed;  */
+    background-color: #018EE0;
+    color: white;
+  }
+
+ 
+  .btnStyle{
+    width: 120px;
+    height: 40px;
+    outline: none;
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+
+color:white;
+border: none;
+border-radius: 3px;
+top: 20px;
+position: relative;
+cursor: pointer;
+  }
+
+  .centerBtn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+
+  .collapsible {
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .collapsibles {
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .revoke {
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .collapsible .active, .collapsible:hover {
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+
+  }
+  
+  .collapsibles .active, .collapsibles:hover {
+    /* background-color: #208aed; */
+    background-color: #018EE0;
+
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .contents {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .actives:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .collapsibles:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .actives:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    /* background-color: #2196F3; */
+    background-color: green;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #gowthamBtn
+{
+display:none;
+}
+
+#historyPopup{
+  display:none;
+}
+
+#historyPopups{
+  display:none;
+}
+
+#successNotification{
+  display:none;
+}
+
+#emailPopup{
+  display:none;
+}
+
+.myframe{
+  width: 100%;
+  height: 600px;
+  border: none;
+
+}
+
+.boxing{
+  width: 100%;
+  height: 80px;
+  top: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+.eventboxing{
+  width: 100%;
+  height: 100px;
+  top: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.singleuselink{
+  outline:none;
+  border:none;
+  background-color:#2196F3;
+  border-radius: 5px;
+ color: white;
+ height:25px;
+ margin-left: 10px;
+}
+
+.centerLoading{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.searchEmail{
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #208aed;
+  margin-top: 20px;
+  outline: none;
+  padding-left: 10px;
+}
+
